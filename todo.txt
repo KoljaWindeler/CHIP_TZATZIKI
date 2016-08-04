@@ -1,0 +1,5 @@
+--> Device Drivers 
+____* --> mmc/SD/SDIO Support
+_________* mmc/SD/SDIO over SPI
+
+http://www.thinkwiki.org/wiki/How_to_get_the_internal_SD_card_working
