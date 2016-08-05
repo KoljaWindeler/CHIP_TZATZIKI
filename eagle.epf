@@ -371,8 +371,8 @@ UsedLibrary="C:/Users/windkol/Documents/GitHub/CHIP_common/lbr/JKW_CHIP.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="0 0 1919 1004"
-State=2
+Loc="1 1 1900 985"
+State=0
 Number=0
 
 [Desktop]
