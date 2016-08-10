@@ -46,6 +46,7 @@
 /plugin/;
 
 #include <dt-bindings/pinctrl/sun4i-a10.h>
+#include <dt-bindings/gpio/gpio.h>
 
 / {
 	compatible = "nextthing,chip", "allwinner,sun5i-r8";
@@ -80,26 +81,33 @@
 
 		__overlay__ {
 			pinctrl-names = "default";
-			pinctrl-0 = <&chip_sdio_pins>,  <&chip_sdio_cd>;
-			cd-gpios = <&pio 1 3 0>; // 0=GPIO_ACTIVE_HIGH
-			non-removable; // for now as i forgot the card detect line
-//			vmmc-supply = <®_vcc3v3>;
-			bus-width = <4>;
 			status = "okay";
-			compatible = "sunxi-mmc";
+			vmmc-supply = <&reg_vcc3v3>;
+			vqmmc-supply = <&reg_vcc3v3>;
+			compatible = "allwinner,sun5i-a13-mmc";
+			pinctrl-0 = <&chip_sdio_pins>,  <&chip_sdio_cd>;
+			cd-gpios = <&pio 1 3 GPIO_ACTIVE_HIGH>;
+			non-removable; // for now as i forgot the card detect line
+			broken-wp;
+			bus-width = <4>;
+                        clocks = <&ahb_gates 10>,<&mmc2_clk 0>,<&mmc2_clk 1>,<&mmc2_clk 2>;
 
-/*
-*			mmc@0{
-*			compatible = "sunxi-mmc";
-*			pinctrl-names = "default";
-*			pinctrl-0 = <&chip_sdio_pins>,  <&chip_sdio_cd>;
-*			cd-gpios = <&pio 1 3 GPIO_ACTIVE_HIGH>; 
-*			non-removable; // for now as i forgot the card detect line
-*			vmmc-supply = <®_vcc3v3>;
-*			bus-width = <4>;
-*			status = "okay";
-*			};
-*/
+
+//			mmc@0{
+//				pinctrl-names = "default";
+//				status = "okay";
+
+//465                         compatible = "allwinner,sun5i-a13-mmc";
+//471                         clock-names = "ahb",
+//472                                       "mmc",
+//473                                       "output",
+//474                                       "sample";
+//475                         interrupts = <34>;
+//476                         status = "disabled";
+//477                         #address-cells = <1>;
+//478                         #size-cells = <0>
+//			};
+
 
 		};
 	};
