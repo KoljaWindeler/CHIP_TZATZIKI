@@ -81,9 +81,9 @@
 		__overlay__ {
 			pinctrl-names = "default";
 			pinctrl-0 = <&chip_sdio_pins>,  <&chip_sdio_cd>;
-			cd-gpios = <&pio 1 3 GPIO_ACTIVE_HIGH>; 
+			cd-gpios = <&pio 1 3 0>; // 0=GPIO_ACTIVE_HIGH
 			non-removable; // for now as i forgot the card detect line
-			vmmc-supply = <®_vcc3v3>;
+//			vmmc-supply = <®_vcc3v3>;
 			bus-width = <4>;
 			status = "okay";
 			compatible = "sunxi-mmc";
