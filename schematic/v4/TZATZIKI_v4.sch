@@ -3067,12 +3067,12 @@ Surface Mounting type.</description>
 <net name="N$6" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="CSID1"/>
-<wire x1="109.22" y1="25.4" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="25.4" x2="116.84" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="25.4" x2="134.62" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="25.4" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="SDIO_BOT" gate="G$1" pin="DAT1"/>
 <pinref part="SDIO_TOP" gate="G$1" pin="DAT1"/>
-<wire x1="152.4" y1="35.56" x2="116.84" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
 <junction x="152.4" y="35.56"/>
 </segment>
 </net>
@@ -3172,17 +3172,17 @@ Surface Mounting type.</description>
 <pinref part="SPI_TOP" gate="G$1" pin="!CARD"/>
 <wire x1="185.42" y1="76.2" x2="152.4" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="SDIO_TOP" gate="G$1" pin="!CARD"/>
-<pinref part="J1" gate="G$1" pin="CSID7"/>
-<wire x1="109.22" y1="17.78" x2="132.08" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="17.78" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="33.02" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="SDIO_BOT" gate="G$1" pin="!CARD"/>
 <wire x1="185.42" y1="33.02" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
 <junction x="152.4" y="33.02"/>
 <wire x1="152.4" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="76.2" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
-<junction x="132.08" y="33.02"/>
+<wire x1="132.08" y1="76.2" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
 <junction x="152.4" y="76.2"/>
+<pinref part="J1" gate="G$1" pin="AP-EINT3"/>
+<wire x1="132.08" y1="35.56" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="35.56" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
+<junction x="132.08" y="35.56"/>
 </segment>
 </net>
 </nets>

@@ -51,52 +51,55 @@
 	compatible = "nextthing,chip", "allwinner,sun5i-r8";
 
 	fragment@0 {
-		target = <&pio>;
-		
+		target = <&pio>;		
 		__overlay__ {
 
-		chip_spi2_pins: spi2@0 {
-				allwinner,pins = "PE1", "PE2", "PE3";
-				allwinner,function = "spi2";
-				allwinner,drive = <SUN4I_PINCTRL_10_MA>;
-				allwinner,pull = <SUN4I_PINCTRL_NO_PULL>;
+		chip_sdio_pins: mmc2@42 {
+				allwinner,pins = "PE4", "PE5", "PE6", "PE7", "PE8", "PE9";
+				allwinner,function = "mmc2";
+				allwinner,drive = <SUN4I_PINCTRL_30_MA>;
+				allwinner,pull = <SUN4I_PINCTRL_PULL_UP>;
 			};
 
-			chip_spi2_cs0_pins: spi2-cs0@0 {
-				allwinner,pins = "PE0";
-				allwinner,function = "spi2";
+			chip_sdio_cd: mmc2_cd@0 {
+				allwinner,pins = "PB3";
+				allwinner,function = "gpio_in";
 				allwinner,drive = <SUN4I_PINCTRL_10_MA>;
-				allwinner,pull = <SUN4I_PINCTRL_NO_PULL>;
+				allwinner,pull = <SUN4I_PINCTRL_PULL_UP>;
 			};
 		};
 	};
 
 
 	/*
-	 * Enable our SPI device, with an spidev device connected
+	 * Enable our SDIO device, with an mmc device connected
 	 * to it
 	 */
 	fragment@1 {
-		target = <&spi2>;
+		target = <&mmc2 >;
 
 		__overlay__ {
 			pinctrl-names = "default";
-			pinctrl-0 = <&chip_spi2_pins>,
-				    <&chip_spi2_cs0_pins>;
+			pinctrl-0 = <&chip_sdio_pins>,  <&chip_sdio_cd>;
+			cd-gpios = <&pio 1 3 GPIO_ACTIVE_HIGH>; 
+			non-removable; // for now as i forgot the card detect line
+			vmmc-supply = <®_vcc3v3>;
+			bus-width = <4>;
 			status = "okay";
-			#address-cells = <1>;
-			#size-cells = <0>;
+			compatible = "sunxi-mmc";
 
-
-			spidev@0{
-				#address-cells = <1>;
-				#size-cells = <0>;
-				compatible = "spi, mmc_block, mmc_spi";
-				pinctrl-names = "default";
-				reg = <0>;
-				status = "okay";
-				spi-max-frequency = <12000000>;
-			};
+/*
+*			mmc@0{
+*			compatible = "sunxi-mmc";
+*			pinctrl-names = "default";
+*			pinctrl-0 = <&chip_sdio_pins>,  <&chip_sdio_cd>;
+*			cd-gpios = <&pio 1 3 GPIO_ACTIVE_HIGH>; 
+*			non-removable; // for now as i forgot the card detect line
+*			vmmc-supply = <®_vcc3v3>;
+*			bus-width = <4>;
+*			status = "okay";
+*			};
+*/
 
 		};
 	};
