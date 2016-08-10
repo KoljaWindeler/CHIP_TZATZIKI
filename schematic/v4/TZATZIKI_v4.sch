@@ -1049,35 +1049,6 @@
 <wire x1="-16.4" y1="25" x2="13.4" y2="25" width="0.127" layer="20"/>
 <wire x1="13.4" y1="25" x2="19.23" y2="25" width="0.127" layer="20"/>
 </package>
-<package name="MICRO-SD-SOCKET-SDIO">
-<wire x1="-6.15" y1="9.2" x2="6.15" y2="9.2" width="0.2032" layer="51"/>
-<smd name="CD2" x="-6.875" y="-3.35" dx="1.45" dy="2" layer="1"/>
-<smd name="CD1" x="6.875" y="-3.35" dx="1.45" dy="2" layer="1"/>
-<smd name="GND3" x="6.875" y="4.95" dx="1.45" dy="2" layer="1"/>
-<smd name="GND1" x="-6.875" y="4.95" dx="1.45" dy="2" layer="1"/>
-<smd name="DAT2" x="3.2" y="-0.75" dx="0.8" dy="1.5" layer="1"/>
-<smd name="CD/DAT3" x="2.1" y="-0.75" dx="0.8" dy="1.5" layer="1"/>
-<smd name="CMD" x="1" y="-0.75" dx="0.8" dy="1.5" layer="1"/>
-<smd name="VDD" x="-0.1" y="-0.75" dx="0.8" dy="1.5" layer="1"/>
-<smd name="CLK" x="-1.2" y="-0.75" dx="0.8" dy="1.5" layer="1"/>
-<smd name="GND" x="-2.3" y="-0.75" dx="0.8" dy="1.5" layer="1"/>
-<smd name="DAT0" x="-3.4" y="-0.75" dx="0.8" dy="1.5" layer="1"/>
-<smd name="DAT1" x="-4.5" y="-0.75" dx="0.8" dy="1.5" layer="1"/>
-<text x="7.98" y="8.75" size="0.8128" layer="25">&gt;Name</text>
-<text x="7.88" y="7.78" size="0.8128" layer="27">&gt;Value</text>
-<smd name="GND@1" x="-6.875" y="6.45" dx="1.45" dy="0.9" layer="1"/>
-<smd name="GND@2" x="6.875" y="-5.05" dx="1.45" dy="0.9" layer="1"/>
-<wire x1="-6.15" y1="-7.6" x2="6.15" y2="-7.6" width="0.2032" layer="51"/>
-<polygon width="0.127" layer="39">
-<vertex x="-4.7" y="6.7"/>
-<vertex x="3.8" y="6.7"/>
-<vertex x="3.8" y="0.2"/>
-<vertex x="-5.1" y="0.2"/>
-<vertex x="-5.1" y="6.3"/>
-</polygon>
-<wire x1="-6.15" y1="9.2" x2="-6.15" y2="-7.6" width="0.127" layer="21"/>
-<wire x1="6.15" y1="9.2" x2="6.15" y2="-7.6" width="0.127" layer="21"/>
-</package>
 <package name="LOGO_10X10_SILK">
 <rectangle x1="2.3144" y1="0.01665" x2="6.0107" y2="0.04995" layer="25"/>
 <rectangle x1="2.1479" y1="0.04995" x2="6.1439" y2="0.08325" layer="25"/>
@@ -1467,6 +1438,36 @@
 <rectangle x1="3.3467" y1="11.17215" x2="4.9784" y2="11.20545" layer="25"/>
 <rectangle x1="3.6131" y1="11.20545" x2="4.712" y2="11.23875" layer="25"/>
 </package>
+<package name="TF-PULL">
+<description>TF / Micro SD socket is PUSH-PUSH type, the card can be pushed into and auto locked and pushed out by simply press the card.
+&lt;p&gt;
+Surface Mounting type.
+Alibaba  http://s.aliexpress.com/aUbUrErA</description>
+<wire x1="7.4" y1="-7.25" x2="7.4" y2="6.75" width="0.127" layer="21"/>
+<wire x1="7.4" y1="6.75" x2="-1.4" y2="6.75" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="6.75" x2="-4.4" y2="7.55" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="7.55" x2="-7.4" y2="7.55" width="0.127" layer="21"/>
+<wire x1="-7.4" y1="7.55" x2="-7.4" y2="-5.8" width="0.127" layer="21"/>
+<wire x1="-7.4" y1="-5.8" x2="-6.1" y2="-5.8" width="0.127" layer="21"/>
+<wire x1="-6.1" y1="-5.8" x2="-6.1" y2="-7.25" width="0.127" layer="21"/>
+<wire x1="-6.1" y1="-7.25" x2="7.4" y2="-7.25" width="0.127" layer="21"/>
+<smd name="S1" x="-7.9" y="2.85" dx="1.4" dy="2" layer="1"/>
+<smd name="S2" x="7.9" y="2.85" dx="1.4" dy="2" layer="1"/>
+<smd name="S3" x="7.96" y="-6.75" dx="1.28" dy="1.4" layer="1"/>
+<smd name="S4" x="-7.025" y="-6.75" dx="1.95" dy="1.4" layer="1"/>
+<smd name="1" x="-2.2" y="-7.62" dx="0.7" dy="1.4" layer="1"/>
+<smd name="2" x="-1.1" y="-7.62" dx="0.7" dy="1.4" layer="1"/>
+<smd name="3" x="0" y="-7.62" dx="0.7" dy="1.4" layer="1"/>
+<smd name="4" x="1.1" y="-7.62" dx="0.7" dy="1.4" layer="1"/>
+<smd name="5" x="2.2" y="-7.62" dx="0.7" dy="1.4" layer="1"/>
+<smd name="6" x="3.3" y="-7.62" dx="0.7" dy="1.4" layer="1"/>
+<smd name="7" x="4.4" y="-7.62" dx="0.7" dy="1.4" layer="1"/>
+<smd name="8" x="5.5" y="-7.62" dx="0.7" dy="1.4" layer="1"/>
+<smd name="9" x="6.6" y="-7.62" dx="0.7" dy="1.4" layer="1"/>
+<text x="7.7" y="1.1" size="1.016" layer="25" ratio="18" rot="R270">&gt;NAME</text>
+<hole x="-3.1" y="3.25" drill="1.25"/>
+<hole x="4.9" y="3.25" drill="1.25"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2X20CHIP">
@@ -1571,29 +1572,6 @@
 <text x="-33.02" y="22.86" size="1.778" layer="94" font="vector" ratio="12">U13</text>
 <text x="27.94" y="22.86" size="1.778" layer="94" font="vector" ratio="12">U14</text>
 </symbol>
-<symbol name="USDCARD_SDIO">
-<wire x1="0" y1="35.56" x2="12.7" y2="35.56" width="0.254" layer="94"/>
-<wire x1="12.7" y1="35.56" x2="12.7" y2="0" width="0.254" layer="94"/>
-<wire x1="12.7" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<text x="0" y="36.068" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="CD/DAT3" x="-5.08" y="30.48" length="middle"/>
-<pin name="CMD" x="-5.08" y="27.94" length="middle"/>
-<pin name="GND" x="-5.08" y="20.32" length="middle"/>
-<pin name="VCC" x="-5.08" y="25.4" length="middle"/>
-<pin name="CLK" x="-5.08" y="22.86" length="middle"/>
-<pin name="DAT1" x="-5.08" y="15.24" length="middle"/>
-<pin name="DAT0" x="-5.08" y="17.78" length="middle"/>
-<pin name="DAT2" x="-5.08" y="33.02" length="middle"/>
-<pin name="SHIELD@3" x="-5.08" y="5.08" length="middle"/>
-<pin name="SHIELD@1" x="-5.08" y="10.16" length="middle"/>
-<pin name="CD1" x="-5.08" y="7.62" length="middle"/>
-<pin name="CD2" x="-5.08" y="2.54" length="middle"/>
-<wire x1="0" y1="0" x2="0" y2="35.56" width="0.254" layer="94"/>
-<wire x1="1.778" y1="7.62" x2="1.778" y2="2.54" width="0.254" layer="94"/>
-<wire x1="1.778" y1="2.54" x2="0.508" y2="2.54" width="0.254" layer="94"/>
-<wire x1="1.778" y1="7.62" x2="0.508" y2="7.62" width="0.254" layer="94"/>
-</symbol>
 <symbol name="LOGO_10X10_SILK">
 <text x="0" y="0" size="0.02" layer="94" font="vector">CHIP DIP LOGO</text>
 <wire x1="0" y1="0" x2="83.28" y2="0" width="0.254" layer="94"/>
@@ -1601,6 +1579,28 @@
 <wire x1="83.28" y1="6.42" x2="0" y2="6.42" width="0.254" layer="94"/>
 <wire x1="0" y1="6.42" x2="0" y2="0" width="0.254" layer="94"/>
 <text x="1.3" y="1.3" size="3.81" layer="94" font="vector">CHIP DIP LOGO 10x10 SILk</text>
+</symbol>
+<symbol name="TF9">
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<text x="-5.08" y="13.208" size="1.6764" layer="95">&gt;NAME</text>
+<text x="10.668" y="10.16" size="1.6764" layer="96" rot="R270">&gt;VALUE</text>
+<text x="9.398" y="-12.192" size="1.016" layer="97" rot="R90">TransFlash holder</text>
+<pin name="DAT2" x="-12.7" y="10.16" length="middle"/>
+<pin name="CD/DAT3(!CS!)" x="-12.7" y="7.62" length="middle"/>
+<pin name="CMD(DI)" x="-12.7" y="5.08" length="middle"/>
+<pin name="VDD" x="-12.7" y="2.54" length="middle" direction="pwr"/>
+<pin name="CLK(SCLK)" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="VSS" x="-12.7" y="-2.54" length="middle" direction="pwr"/>
+<pin name="DAT0(DO)" x="-12.7" y="-5.08" length="middle"/>
+<pin name="DAT1" x="-12.7" y="-7.62" length="middle"/>
+<pin name="!CARD" x="-12.7" y="-10.16" length="middle" direction="pas"/>
+<pin name="S1" x="-2.54" y="-15.24" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="S2" x="0" y="-15.24" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="S3" x="2.54" y="-15.24" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="S4" x="5.08" y="-15.24" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1972,43 +1972,42 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="USD-SDIO-SOCKET" prefix="J">
-<description>microSD Socket
-&lt;br&gt;&lt;br&gt;
-Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics SKU : PRT-00127. tDoc lines correctly indicate media card edge positions when inserting (unlocked, locked, depressed). NOTE: CD1 and CD2 are connected internally, and short to ground when card is removed.</description>
-<gates>
-<gate name="G$1" symbol="USDCARD_SDIO" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MICRO-SD-SOCKET-SDIO">
-<connects>
-<connect gate="G$1" pin="CD/DAT3" pad="CD/DAT3"/>
-<connect gate="G$1" pin="CD1" pad="CD1"/>
-<connect gate="G$1" pin="CD2" pad="CD2"/>
-<connect gate="G$1" pin="CLK" pad="CLK"/>
-<connect gate="G$1" pin="CMD" pad="CMD"/>
-<connect gate="G$1" pin="DAT0" pad="DAT0"/>
-<connect gate="G$1" pin="DAT1" pad="DAT1"/>
-<connect gate="G$1" pin="DAT2" pad="DAT2"/>
-<connect gate="G$1" pin="GND" pad="GND GND@1 GND@2"/>
-<connect gate="G$1" pin="SHIELD@1" pad="GND1"/>
-<connect gate="G$1" pin="SHIELD@3" pad="GND3"/>
-<connect gate="G$1" pin="VCC" pad="VDD"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="SCHD3A0100" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LOGO_10X10_SILK">
 <gates>
 <gate name="G$1" symbol="LOGO_10X10_SILK" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="LOGO_10X10_SILK">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TF-HOLDER" prefix="SD">
+<description>TF / Micro SD socket is PUSH-PUSH type, the card can be pushed into and auto locked and pushed out by simply press the card.
+&lt;p&gt;
+Surface Mounting type.</description>
+<gates>
+<gate name="G$1" symbol="TF9" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TF-PULL">
+<connects>
+<connect gate="G$1" pin="!CARD" pad="9"/>
+<connect gate="G$1" pin="CD/DAT3(!CS!)" pad="2"/>
+<connect gate="G$1" pin="CLK(SCLK)" pad="5"/>
+<connect gate="G$1" pin="CMD(DI)" pad="3"/>
+<connect gate="G$1" pin="DAT0(DO)" pad="7"/>
+<connect gate="G$1" pin="DAT1" pad="8"/>
+<connect gate="G$1" pin="DAT2" pad="1"/>
+<connect gate="G$1" pin="S1" pad="S1"/>
+<connect gate="G$1" pin="S2" pad="S2"/>
+<connect gate="G$1" pin="S3" pad="S3"/>
+<connect gate="G$1" pin="S4" pad="S4"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="6"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -2826,18 +2825,18 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 </classes>
 <parts>
 <part name="J1" library="JKW_CHIP" deviceset="2X20-CHIP-HEADERS" device="2X20CHIP_OFFSET-TH"/>
-<part name="J2" library="JKW_CHIP" deviceset="USD-SDIO-SOCKET" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="JKW_CHIP" deviceset="LOGO_10X10_SILK" device=""/>
-<part name="J3" library="JKW_CHIP" deviceset="USD-SDIO-SOCKET" device=""/>
 <part name="POWER_USB" library="Spark" deviceset="USB" device="USB-MICROB-SMT-DIP"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="J4" library="JKW_CHIP" deviceset="USD-SDIO-SOCKET" device=""/>
-<part name="J5" library="JKW_CHIP" deviceset="USD-SDIO-SOCKET" device=""/>
+<part name="SDIO_BOT" library="JKW_CHIP" deviceset="TF-HOLDER" device=""/>
+<part name="SDIO_TOP" library="JKW_CHIP" deviceset="TF-HOLDER" device=""/>
+<part name="SPI_TOP" library="JKW_CHIP" deviceset="TF-HOLDER" device=""/>
+<part name="SPI_BOT" library="JKW_CHIP" deviceset="TF-HOLDER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2851,18 +2850,18 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="60.96" y="40.64"/>
-<instance part="J2" gate="G$1" x="152.4" y="20.32"/>
 <instance part="GND1" gate="1" x="111.76" y="7.62"/>
 <instance part="GND2" gate="1" x="137.16" y="17.78"/>
 <instance part="GND3" gate="1" x="73.66" y="2.54"/>
 <instance part="GND4" gate="1" x="50.8" y="2.54"/>
 <instance part="GND5" gate="1" x="10.16" y="2.54"/>
 <instance part="U$1" gate="G$1" x="27.94" y="-20.32"/>
-<instance part="J3" gate="G$1" x="152.4" y="63.5"/>
 <instance part="POWER_USB" gate="G$1" x="-20.32" y="76.2" rot="MR0"/>
 <instance part="GND18" gate="1" x="-12.7" y="71.12" rot="MR0"/>
-<instance part="J4" gate="G$1" x="177.8" y="63.5"/>
-<instance part="J5" gate="G$1" x="177.8" y="20.32"/>
+<instance part="SDIO_BOT" gate="G$1" x="198.12" y="43.18"/>
+<instance part="SDIO_TOP" gate="G$1" x="165.1" y="43.18"/>
+<instance part="SPI_TOP" gate="G$1" x="165.1" y="86.36"/>
+<instance part="SPI_BOT" gate="G$1" x="198.12" y="86.36"/>
 </instances>
 <busses>
 </busses>
@@ -2910,66 +2909,86 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 <junction x="111.76" y="15.24"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="SHIELD@1"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="172.72" y1="30.48" x2="137.16" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="30.48" x2="137.16" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="SHIELD@3"/>
-<wire x1="137.16" y1="27.94" x2="137.16" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="22.86" x2="137.16" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="25.4" x2="137.16" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="GND"/>
-<wire x1="172.72" y1="40.64" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="40.64" x2="137.16" y2="30.48" width="0.1524" layer="91"/>
-<junction x="137.16" y="25.4"/>
-<junction x="137.16" y="30.48"/>
-<pinref part="J2" gate="G$1" pin="CD1"/>
-<wire x1="172.72" y1="27.94" x2="137.16" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="CD2"/>
-<wire x1="137.16" y1="25.4" x2="137.16" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="22.86" x2="172.72" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="40.64" x2="137.16" y2="22.86" width="0.1524" layer="91"/>
 <junction x="137.16" y="22.86"/>
-<junction x="137.16" y="27.94"/>
-<pinref part="J3" gate="G$1" pin="GND"/>
-<wire x1="172.72" y1="83.82" x2="137.16" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="83.82" x2="137.16" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="73.66" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="71.12" x2="137.16" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="68.58" x2="137.16" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="83.82" x2="137.16" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="40.64" x2="137.16" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="CD2"/>
-<wire x1="137.16" y1="66.04" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="SHIELD@3"/>
-<wire x1="172.72" y1="68.58" x2="137.16" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="CD1"/>
-<wire x1="172.72" y1="71.12" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="SHIELD@1"/>
-<wire x1="172.72" y1="73.66" x2="137.16" y2="73.66" width="0.1524" layer="91"/>
 <junction x="137.16" y="66.04"/>
-<junction x="137.16" y="68.58"/>
-<junction x="137.16" y="71.12"/>
-<junction x="137.16" y="73.66"/>
 <junction x="137.16" y="40.64"/>
-<pinref part="J4" gate="G$1" pin="GND"/>
-<pinref part="J4" gate="G$1" pin="SHIELD@3"/>
-<pinref part="J4" gate="G$1" pin="SHIELD@1"/>
-<pinref part="J4" gate="G$1" pin="CD1"/>
-<pinref part="J4" gate="G$1" pin="CD2"/>
-<pinref part="J5" gate="G$1" pin="GND"/>
-<pinref part="J5" gate="G$1" pin="SHIELD@3"/>
-<pinref part="J5" gate="G$1" pin="SHIELD@1"/>
-<pinref part="J5" gate="G$1" pin="CD1"/>
-<pinref part="J5" gate="G$1" pin="CD2"/>
-<wire x1="172.72" y1="27.94" x2="147.32" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="22.86" x2="147.32" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="30.48" x2="147.32" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="40.64" x2="147.32" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="25.4" x2="147.32" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="68.58" x2="147.32" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="83.82" x2="147.32" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="71.12" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="66.04" x2="147.32" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="73.66" x2="147.32" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="22.86" x2="200.66" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="22.86" x2="198.12" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="22.86" x2="195.58" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="22.86" x2="170.18" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="22.86" x2="167.64" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="22.86" x2="165.1" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="22.86" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="22.86" x2="137.16" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="40.64" x2="152.4" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="40.64" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="SPI_BOT" gate="G$1" pin="VSS"/>
+<wire x1="137.16" y1="83.82" x2="152.4" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="SPI_TOP" gate="G$1" pin="S1"/>
+<wire x1="152.4" y1="83.82" x2="185.42" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="66.04" x2="162.56" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="66.04" x2="162.56" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="SPI_BOT" gate="G$1" pin="S4"/>
+<wire x1="162.56" y1="66.04" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="66.04" x2="167.64" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="66.04" x2="170.18" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="66.04" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="66.04" x2="198.12" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="66.04" x2="200.66" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="66.04" x2="203.2" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="66.04" x2="203.2" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="SPI_BOT" gate="G$1" pin="S3"/>
+<wire x1="200.66" y1="71.12" x2="200.66" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="SPI_BOT" gate="G$1" pin="S2"/>
+<wire x1="198.12" y1="71.12" x2="198.12" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="SPI_BOT" gate="G$1" pin="S1"/>
+<wire x1="195.58" y1="71.12" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="SPI_TOP" gate="G$1" pin="S4"/>
+<wire x1="170.18" y1="71.12" x2="170.18" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="SPI_TOP" gate="G$1" pin="S3"/>
+<wire x1="167.64" y1="71.12" x2="167.64" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="SPI_TOP" gate="G$1" pin="S2"/>
+<wire x1="165.1" y1="71.12" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
+<junction x="162.56" y="66.04"/>
+<junction x="165.1" y="66.04"/>
+<junction x="167.64" y="66.04"/>
+<junction x="170.18" y="66.04"/>
+<junction x="195.58" y="66.04"/>
+<junction x="198.12" y="66.04"/>
+<junction x="200.66" y="66.04"/>
+<pinref part="SPI_TOP" gate="G$1" pin="VSS"/>
+<junction x="152.4" y="83.82"/>
+<pinref part="SDIO_BOT" gate="G$1" pin="VSS"/>
+<pinref part="SDIO_TOP" gate="G$1" pin="VSS"/>
+<junction x="152.4" y="40.64"/>
+<pinref part="SDIO_BOT" gate="G$1" pin="S4"/>
+<wire x1="203.2" y1="22.86" x2="203.2" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="SDIO_BOT" gate="G$1" pin="S3"/>
+<wire x1="200.66" y1="27.94" x2="200.66" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="SDIO_BOT" gate="G$1" pin="S2"/>
+<wire x1="198.12" y1="27.94" x2="198.12" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="SDIO_BOT" gate="G$1" pin="S1"/>
+<wire x1="195.58" y1="27.94" x2="195.58" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="SDIO_TOP" gate="G$1" pin="S4"/>
+<wire x1="170.18" y1="27.94" x2="170.18" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="SDIO_TOP" gate="G$1" pin="S3"/>
+<wire x1="167.64" y1="27.94" x2="167.64" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="SDIO_TOP" gate="G$1" pin="S2"/>
+<wire x1="165.1" y1="27.94" x2="165.1" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="SDIO_TOP" gate="G$1" pin="S1"/>
+<wire x1="162.56" y1="27.94" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
+<junction x="162.56" y="22.86"/>
+<junction x="165.1" y="22.86"/>
+<junction x="167.64" y="22.86"/>
+<junction x="170.18" y="22.86"/>
+<junction x="195.58" y="22.86"/>
+<junction x="198.12" y="22.86"/>
+<junction x="200.66" y="22.86"/>
 </segment>
 <segment>
 <pinref part="POWER_USB" gate="G$1" pin="GND"/>
@@ -2980,39 +2999,42 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="CD/DAT3"/>
-<wire x1="172.72" y1="50.8" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="CSID3"/>
 <wire x1="109.22" y1="22.86" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="22.86" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="CD/DAT3"/>
-<wire x1="172.72" y1="50.8" x2="147.32" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="50.8" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="SDIO_BOT" gate="G$1" pin="CD/DAT3(!CS!)"/>
+<pinref part="SDIO_TOP" gate="G$1" pin="CD/DAT3(!CS!)"/>
+<wire x1="152.4" y1="50.8" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
+<junction x="152.4" y="50.8"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="CMD"/>
-<wire x1="172.72" y1="48.26" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="48.26" x2="124.46" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-5.08" x2="63.5" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-5.08" x2="63.5" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="CSID4"/>
 <wire x1="63.5" y1="20.32" x2="76.2" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="CMD"/>
-<wire x1="172.72" y1="48.26" x2="147.32" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="48.26" x2="152.4" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="SDIO_BOT" gate="G$1" pin="CMD(DI)"/>
+<pinref part="SDIO_TOP" gate="G$1" pin="CMD(DI)"/>
+<wire x1="152.4" y1="48.26" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
+<junction x="152.4" y="48.26"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="DAT0"/>
-<wire x1="119.38" y1="38.1" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="38.1" x2="119.38" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="-2.54" x2="66.04" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="-2.54" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="CSID0"/>
 <wire x1="66.04" y1="25.4" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="DAT0"/>
-<wire x1="172.72" y1="38.1" x2="147.32" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="38.1" x2="152.4" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="SDIO_BOT" gate="G$1" pin="DAT0(DO)"/>
+<pinref part="SDIO_TOP" gate="G$1" pin="DAT0(DO)"/>
+<wire x1="152.4" y1="38.1" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
+<junction x="152.4" y="38.1"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -3026,18 +3048,20 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 <pinref part="J1" gate="G$1" pin="VCC3V3@1"/>
 <wire x1="76.2" y1="53.34" x2="71.12" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="53.34" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="VCC"/>
-<wire x1="172.72" y1="45.72" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="71.12" x2="119.38" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="71.12" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="71.12" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="VCC"/>
-<wire x1="119.38" y1="88.9" x2="172.72" y2="88.9" width="0.1524" layer="91"/>
 <junction x="119.38" y="71.12"/>
-<pinref part="J4" gate="G$1" pin="VCC"/>
-<pinref part="J5" gate="G$1" pin="VCC"/>
-<wire x1="172.72" y1="45.72" x2="147.32" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="88.9" x2="147.32" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="45.72" x2="152.4" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="SPI_BOT" gate="G$1" pin="VDD"/>
+<wire x1="152.4" y1="45.72" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="88.9" x2="152.4" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="SPI_TOP" gate="G$1" pin="VDD"/>
+<wire x1="152.4" y1="88.9" x2="185.42" y2="88.9" width="0.1524" layer="91"/>
+<junction x="152.4" y="88.9"/>
+<pinref part="SDIO_BOT" gate="G$1" pin="VDD"/>
+<pinref part="SDIO_TOP" gate="G$1" pin="VDD"/>
+<junction x="152.4" y="45.72"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -3045,23 +3069,25 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 <pinref part="J1" gate="G$1" pin="CSID1"/>
 <wire x1="109.22" y1="25.4" x2="116.84" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="25.4" x2="116.84" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="DAT1"/>
-<wire x1="116.84" y1="35.56" x2="172.72" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="DAT1"/>
-<wire x1="172.72" y1="35.56" x2="147.32" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="SDIO_BOT" gate="G$1" pin="DAT1"/>
+<pinref part="SDIO_TOP" gate="G$1" pin="DAT1"/>
+<wire x1="152.4" y1="35.56" x2="116.84" y2="35.56" width="0.1524" layer="91"/>
+<junction x="152.4" y="35.56"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="DAT2"/>
-<wire x1="172.72" y1="53.34" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="53.34" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="73.66" x2="68.58" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="CSID2"/>
 <wire x1="68.58" y1="22.86" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="DAT2"/>
-<wire x1="172.72" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="53.34" x2="152.4" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="SDIO_BOT" gate="G$1" pin="DAT2"/>
+<pinref part="SDIO_TOP" gate="G$1" pin="DAT2"/>
+<wire x1="152.4" y1="53.34" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
+<junction x="152.4" y="53.34"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -3069,32 +3095,35 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 <pinref part="J1" gate="G$1" pin="CSID5"/>
 <wire x1="109.22" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="127" y1="20.32" x2="127" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="CLK"/>
-<wire x1="127" y1="43.18" x2="172.72" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="CLK"/>
-<wire x1="172.72" y1="43.18" x2="147.32" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="43.18" x2="152.4" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="SDIO_BOT" gate="G$1" pin="CLK(SCLK)"/>
+<pinref part="SDIO_TOP" gate="G$1" pin="CLK(SCLK)"/>
+<wire x1="152.4" y1="43.18" x2="127" y2="43.18" width="0.1524" layer="91"/>
+<junction x="152.4" y="43.18"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="J3" gate="G$1" pin="CD/DAT3"/>
-<wire x1="172.72" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="93.98" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="CSIPCK/CS0"/>
 <wire x1="66.04" y1="30.48" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="CD/DAT3"/>
-<wire x1="172.72" y1="93.98" x2="147.32" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="SPI_TOP" gate="G$1" pin="CD/DAT3(!CS!)"/>
+<pinref part="SPI_BOT" gate="G$1" pin="CD/DAT3(!CS!)"/>
+<wire x1="152.4" y1="93.98" x2="185.42" y2="93.98" width="0.1524" layer="91"/>
+<junction x="152.4" y="93.98"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="J3" gate="G$1" pin="CMD"/>
-<wire x1="172.72" y1="91.44" x2="63.5" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="91.44" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="HSY/MOSI"/>
 <wire x1="63.5" y1="27.94" x2="76.2" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="CMD"/>
-<wire x1="172.72" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="SPI_BOT" gate="G$1" pin="CMD(DI)"/>
+<wire x1="63.5" y1="91.44" x2="152.4" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="SPI_TOP" gate="G$1" pin="CMD(DI)"/>
+<wire x1="152.4" y1="91.44" x2="185.42" y2="91.44" width="0.1524" layer="91"/>
+<junction x="152.4" y="91.44"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -3102,10 +3131,11 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 <pinref part="J1" gate="G$1" pin="VSY/MISO"/>
 <wire x1="109.22" y1="27.94" x2="114.3" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="27.94" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="DAT0"/>
-<wire x1="114.3" y1="81.28" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="DAT0"/>
-<wire x1="172.72" y1="81.28" x2="147.32" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="SPI_BOT" gate="G$1" pin="DAT0(DO)"/>
+<wire x1="114.3" y1="81.28" x2="152.4" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="SPI_TOP" gate="G$1" pin="DAT0(DO)"/>
+<wire x1="152.4" y1="81.28" x2="185.42" y2="81.28" width="0.1524" layer="91"/>
+<junction x="152.4" y="81.28"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -3117,12 +3147,13 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 <net name="N$14" class="0">
 <segment>
 <wire x1="129.54" y1="30.48" x2="129.54" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="J3" gate="G$1" pin="CLK"/>
-<wire x1="129.54" y1="86.36" x2="172.72" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="CSICK/CLK"/>
 <wire x1="109.22" y1="30.48" x2="129.54" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="CLK"/>
-<wire x1="172.72" y1="86.36" x2="147.32" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="SPI_BOT" gate="G$1" pin="CLK(SCLK)"/>
+<wire x1="129.54" y1="86.36" x2="152.4" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="SPI_TOP" gate="G$1" pin="CLK(SCLK)"/>
+<wire x1="152.4" y1="86.36" x2="185.42" y2="86.36" width="0.1524" layer="91"/>
+<junction x="152.4" y="86.36"/>
 </segment>
 </net>
 <net name="VOUT" class="0">
@@ -3133,6 +3164,25 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 <wire x1="45.72" y1="63.5" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="78.74" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="78.74" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="SPI_BOT" gate="G$1" pin="!CARD"/>
+<pinref part="SPI_TOP" gate="G$1" pin="!CARD"/>
+<wire x1="185.42" y1="76.2" x2="152.4" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="SDIO_TOP" gate="G$1" pin="!CARD"/>
+<pinref part="J1" gate="G$1" pin="CSID7"/>
+<wire x1="109.22" y1="17.78" x2="132.08" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="17.78" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="33.02" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="SDIO_BOT" gate="G$1" pin="!CARD"/>
+<wire x1="185.42" y1="33.02" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
+<junction x="152.4" y="33.02"/>
+<wire x1="152.4" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="76.2" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
+<junction x="132.08" y="33.02"/>
+<junction x="152.4" y="76.2"/>
 </segment>
 </net>
 </nets>
