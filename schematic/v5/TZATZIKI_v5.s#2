@@ -8782,7 +8782,6 @@ drill 1.1 mm</description>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="1uF"/>
-<part name="U$2" library="JKW_CHIP" deviceset="LOGO_10X10_SILK" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8795,7 +8794,7 @@ drill 1.1 mm</description>
 <instance part="GND3" gate="1" x="73.66" y="2.54"/>
 <instance part="GND4" gate="1" x="50.8" y="2.54"/>
 <instance part="GND5" gate="1" x="10.16" y="2.54"/>
-<instance part="U$1" gate="G$1" x="27.94" y="-27.94"/>
+<instance part="U$1" gate="G$1" x="27.94" y="-20.32"/>
 <instance part="POWER_USB" gate="G$1" x="-20.32" y="76.2" rot="MR0"/>
 <instance part="GND18" gate="1" x="-12.7" y="71.12" rot="MR0"/>
 <instance part="SDIO_BOT" gate="G$1" x="198.12" y="43.18"/>
@@ -8820,7 +8819,6 @@ drill 1.1 mm</description>
 <instance part="R1" gate="G$1" x="228.6" y="20.32" rot="MR90"/>
 <instance part="R2" gate="G$1" x="218.44" y="20.32" rot="MR90"/>
 <instance part="C6" gate="G$1" x="132.08" y="-40.64"/>
-<instance part="U$2" gate="G$1" x="27.94" y="-35.56"/>
 </instances>
 <busses>
 </busses>
