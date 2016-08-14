@@ -8783,6 +8783,12 @@ drill 1.1 mm</description>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="1uF"/>
 <part name="U$2" library="JKW_CHIP" deviceset="LOGO_10X10_SILK" device=""/>
+<part name="P1" library="solpad" deviceset="SE11" device=""/>
+<part name="P3" library="solpad" deviceset="SE11" device=""/>
+<part name="P0" library="solpad" deviceset="SE11" device=""/>
+<part name="P4" library="solpad" deviceset="SE11" device=""/>
+<part name="GND" library="solpad" deviceset="SE11" device=""/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8821,6 +8827,12 @@ drill 1.1 mm</description>
 <instance part="R2" gate="G$1" x="218.44" y="20.32" rot="MR90"/>
 <instance part="C6" gate="G$1" x="132.08" y="-40.64"/>
 <instance part="U$2" gate="G$1" x="27.94" y="-35.56"/>
+<instance part="P1" gate="1" x="111.76" y="50.8"/>
+<instance part="P3" gate="1" x="116.84" y="50.8"/>
+<instance part="P0" gate="1" x="63.5" y="53.34"/>
+<instance part="P4" gate="1" x="58.42" y="53.34"/>
+<instance part="GND" gate="1" x="144.78" y="27.94"/>
+<instance part="GND10" gate="1" x="129.54" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -8879,7 +8891,8 @@ drill 1.1 mm</description>
 <wire x1="170.18" y1="22.86" x2="167.64" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="22.86" x2="165.1" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="22.86" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="22.86" x2="137.16" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="22.86" x2="144.78" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="22.86" x2="137.16" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="40.64" x2="152.4" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="40.64" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="SDIO_BOT" gate="G$1" pin="VSS"/>
@@ -8908,6 +8921,9 @@ drill 1.1 mm</description>
 <junction x="195.58" y="22.86"/>
 <junction x="198.12" y="22.86"/>
 <junction x="200.66" y="22.86"/>
+<pinref part="GND" gate="1" pin="MP"/>
+<wire x1="144.78" y1="25.4" x2="144.78" y2="22.86" width="0.1524" layer="91"/>
+<junction x="144.78" y="22.86"/>
 </segment>
 <segment>
 <pinref part="POWER_USB" gate="G$1" pin="GND"/>
@@ -8968,6 +8984,14 @@ drill 1.1 mm</description>
 <wire x1="132.08" y1="-45.72" x2="132.08" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="-50.8" x2="157.48" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="157.48" y="-50.8"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="HPCOM"/>
+<wire x1="109.22" y1="58.42" x2="124.46" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="58.42" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="124.46" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="76.2" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -9255,6 +9279,37 @@ drill 1.1 mm</description>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="15.24" x2="228.6" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="XIO-P1"/>
+<wire x1="109.22" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="P1" gate="1" pin="MP"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="XIO-P3"/>
+<wire x1="109.22" y1="45.72" x2="116.84" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="P3" gate="1" pin="MP"/>
+<wire x1="116.84" y1="45.72" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="XIO-P0"/>
+<wire x1="76.2" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="P0" gate="1" pin="MP"/>
+<wire x1="63.5" y1="48.26" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="XIO-P2"/>
+<wire x1="76.2" y1="45.72" x2="58.42" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="P4" gate="1" pin="MP"/>
+<wire x1="58.42" y1="45.72" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

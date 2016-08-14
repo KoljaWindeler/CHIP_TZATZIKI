@@ -8782,6 +8782,9 @@ drill 1.1 mm</description>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="1uF"/>
+<part name="U$2" library="JKW_CHIP" deviceset="LOGO_10X10_SILK" device=""/>
+<part name="P1" library="solpad" deviceset="SE11" device=""/>
+<part name="P3" library="solpad" deviceset="SE11" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8794,7 +8797,7 @@ drill 1.1 mm</description>
 <instance part="GND3" gate="1" x="73.66" y="2.54"/>
 <instance part="GND4" gate="1" x="50.8" y="2.54"/>
 <instance part="GND5" gate="1" x="10.16" y="2.54"/>
-<instance part="U$1" gate="G$1" x="27.94" y="-20.32"/>
+<instance part="U$1" gate="G$1" x="27.94" y="-27.94"/>
 <instance part="POWER_USB" gate="G$1" x="-20.32" y="76.2" rot="MR0"/>
 <instance part="GND18" gate="1" x="-12.7" y="71.12" rot="MR0"/>
 <instance part="SDIO_BOT" gate="G$1" x="198.12" y="43.18"/>
@@ -8819,6 +8822,9 @@ drill 1.1 mm</description>
 <instance part="R1" gate="G$1" x="228.6" y="20.32" rot="MR90"/>
 <instance part="R2" gate="G$1" x="218.44" y="20.32" rot="MR90"/>
 <instance part="C6" gate="G$1" x="132.08" y="-40.64"/>
+<instance part="U$2" gate="G$1" x="27.94" y="-35.56"/>
+<instance part="P1" gate="1" x="111.76" y="50.8"/>
+<instance part="P3" gate="1" x="116.84" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -9082,7 +9088,8 @@ drill 1.1 mm</description>
 <wire x1="167.64" y1="-25.4" x2="166.37" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="166.37" y1="-25.4" x2="149.86" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="-25.4" x2="149.86" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="-30.48" x2="149.86" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-30.48" x2="149.86" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-35.56" x2="149.86" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="-48.26" x2="213.36" y2="-48.26" width="0.1524" layer="91"/>
 <junction x="213.36" y="-48.26"/>
 <pinref part="PAM1" gate="G$1" pin="PVDD"/>
@@ -9096,6 +9103,15 @@ drill 1.1 mm</description>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="223.52" y1="-30.48" x2="213.36" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="213.36" y="-30.48"/>
+<wire x1="167.64" y1="-30.48" x2="166.37" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="PAM1" gate="G$1" pin="VDD"/>
+<wire x1="166.37" y1="-30.48" x2="152.4" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="-30.48" x2="152.4" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="-35.56" x2="149.86" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-35.56" x2="132.08" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="-35.56" x2="132.08" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="149.86" y="-35.56"/>
 </segment>
 </net>
 <net name="VOUT" class="0">
@@ -9247,13 +9263,17 @@ drill 1.1 mm</description>
 </net>
 <net name="N$23" class="0">
 <segment>
-<wire x1="167.64" y1="-30.48" x2="166.37" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="PAM1" gate="G$1" pin="VDD"/>
-<wire x1="166.37" y1="-30.48" x2="152.4" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="-30.48" x2="152.4" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="-35.56" x2="132.08" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="-35.56" x2="132.08" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="XIO-P1"/>
+<wire x1="109.22" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="P1" gate="1" pin="MP"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="XIO-P3"/>
+<wire x1="109.22" y1="45.72" x2="116.84" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="P3" gate="1" pin="MP"/>
+<wire x1="116.84" y1="45.72" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
