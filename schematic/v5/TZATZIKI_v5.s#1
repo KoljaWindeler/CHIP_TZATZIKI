@@ -8788,6 +8788,7 @@ drill 1.1 mm</description>
 <part name="P0" library="solpad" deviceset="SE11" device=""/>
 <part name="P4" library="solpad" deviceset="SE11" device=""/>
 <part name="GND" library="solpad" deviceset="SE11" device=""/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8831,6 +8832,7 @@ drill 1.1 mm</description>
 <instance part="P0" gate="1" x="63.5" y="53.34"/>
 <instance part="P4" gate="1" x="58.42" y="53.34"/>
 <instance part="GND" gate="1" x="144.78" y="27.94"/>
+<instance part="GND10" gate="1" x="129.54" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -8982,6 +8984,14 @@ drill 1.1 mm</description>
 <wire x1="132.08" y1="-45.72" x2="132.08" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="-50.8" x2="157.48" y2="-50.8" width="0.1524" layer="91"/>
 <junction x="157.48" y="-50.8"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="HPCOM"/>
+<wire x1="109.22" y1="58.42" x2="124.46" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="58.42" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="124.46" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="76.2" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
