@@ -8783,6 +8783,8 @@ drill 1.1 mm</description>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="1uF"/>
 <part name="U$2" library="JKW_CHIP" deviceset="LOGO_10X10_SILK" device=""/>
+<part name="P1" library="solpad" deviceset="SE11" device=""/>
+<part name="P3" library="solpad" deviceset="SE11" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8821,6 +8823,8 @@ drill 1.1 mm</description>
 <instance part="R2" gate="G$1" x="218.44" y="20.32" rot="MR90"/>
 <instance part="C6" gate="G$1" x="132.08" y="-40.64"/>
 <instance part="U$2" gate="G$1" x="27.94" y="-35.56"/>
+<instance part="P1" gate="1" x="111.76" y="50.8"/>
+<instance part="P3" gate="1" x="116.84" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -9255,6 +9259,21 @@ drill 1.1 mm</description>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="15.24" x2="228.6" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="XIO-P1"/>
+<wire x1="109.22" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="P1" gate="1" pin="MP"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="XIO-P3"/>
+<wire x1="109.22" y1="45.72" x2="116.84" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="P3" gate="1" pin="MP"/>
+<wire x1="116.84" y1="45.72" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
