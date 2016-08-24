@@ -306,11 +306,12 @@
 	pinctrl-names = "default";
 	compatible = "allwinner,sun5i-a13-mmc";
 	pinctrl-0 = <&chip_sdio_pins>,  <&chip_sdio_cd>;
-	cd-gpios = <&pio 1 3 GPIO_ACTIVE_HIGH>;
 	bus-width = <4>;
 	clocks = <&ahb_gates 10>,<&mmc2_clk 0>,<&mmc2_clk 1>,<&mmc2_clk 2>;
 	// and go!
 	status = "okay";
+	//cd-gpios = <&pio 1 3 GPIO_ACTIVE_HIGH>;
+	broken-cd; // doenst work with pchip
 };
 
 
