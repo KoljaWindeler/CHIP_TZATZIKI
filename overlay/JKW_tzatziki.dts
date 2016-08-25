@@ -46,6 +46,7 @@
 /plugin/;
 
 #include <dt-bindings/pinctrl/sun4i-a10.h>
+#include <dt-bindings/gpio/gpio.h>
 
 / {
 	compatible = "nextthing,chip", "allwinner,sun5i-r8";
@@ -72,36 +73,24 @@
 
 
 	/*
-	 * Enable our SDIO device, with an mmc device connected
-	 * to it
+	 * Enable our SDIO device
 	 */
 	fragment@1 {
 		target = <&mmc2 >;
 
 		__overlay__ {
+			vmmc-supply = <&reg_vcc3v3>;
+			vqmmc-supply = <&reg_vcc3v3>;
+			// everything below this like is default, but I'll set it to be sure
 			pinctrl-names = "default";
+			compatible = "allwinner,sun5i-a13-mmc";
 			pinctrl-0 = <&chip_sdio_pins>,  <&chip_sdio_cd>;
-//			cd-gpios = <&pio 1 3 0>; // 0=GPIO_ACTIVE_HIGH
-			broken-cd;
-			non-removable; // for now as i forgot the card detect line
-//			vmmc-supply = <®_vcc3v3>;
+			cd-gpios = <&pio 1 3 GPIO_ACTIVE_HIGH>;
+			cd-inverted; // it is low active, but this is somehow wrong
 			bus-width = <4>;
+                        clocks = <&ahb_gates 10>,<&mmc2_clk 0>,<&mmc2_clk 1>,<&mmc2_clk 2>;
+			// and go!
 			status = "okay";
-			compatible = "sunxi-mmc";
-
-/*
-*			mmc@0{
-*			compatible = "sunxi-mmc";
-*			pinctrl-names = "default";
-*			pinctrl-0 = <&chip_sdio_pins>,  <&chip_sdio_cd>;
-*			cd-gpios = <&pio 1 3 GPIO_ACTIVE_HIGH>; 
-*			non-removable; // for now as i forgot the card detect line
-*			vmmc-supply = <®_vcc3v3>;
-*			bus-width = <4>;
-*			status = "okay";
-*			};
-*/
-
 		};
 	};
 };
