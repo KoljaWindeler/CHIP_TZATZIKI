@@ -8984,17 +8984,17 @@ drill 1.1 mm</description>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="JKW_CHIP" deviceset="2X20-CHIP" device=""/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
-<part name="A_O" library="solpad" deviceset="SE11" device=""/>
-<part name="A_I" library="solpad" deviceset="SE11" device=""/>
 <part name="A_G" library="solpad" deviceset="SE11" device=""/>
 <part name="SJ2" library="jumper" deviceset="SJ" device=""/>
+<part name="SJ3" library="jumper" deviceset="SJ" device=""/>
+<part name="L_I" library="solpad" deviceset="SE11" device=""/>
+<part name="L_O" library="solpad" deviceset="SE11" device=""/>
+<part name="R_I" library="solpad" deviceset="SE11" device=""/>
+<part name="R_O" library="solpad" deviceset="SE11" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="248.92" y="7.62" size="1.778" layer="91">Removed R1 or C5 and
- connect SJ2 if you 
-want to go MONO</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="111.76" y="7.62"/>
@@ -9005,7 +9005,7 @@ want to go MONO</text>
 <instance part="U$1" gate="G$1" x="-48.26" y="-27.94"/>
 <instance part="POWER_USB" gate="G$1" x="-20.32" y="76.2" rot="MR0"/>
 <instance part="GND18" gate="1" x="-12.7" y="71.12" rot="MR0"/>
-<instance part="SDIO_BOT" gate="G$1" x="198.12" y="43.18"/>
+<instance part="SDIO_BOT" gate="G$1" x="193.04" y="43.18"/>
 <instance part="SDIO_TOP" gate="G$1" x="165.1" y="43.18"/>
 <instance part="GND14" gate="1" x="-35.56" y="12.7" rot="MR0"/>
 <instance part="R10" gate="G$1" x="-7.62" y="43.18" rot="MR90"/>
@@ -9037,11 +9037,14 @@ want to go MONO</text>
 <instance part="VBAT" gate="G$1" x="17.78" y="91.44" rot="R180"/>
 <instance part="GND11" gate="1" x="30.48" y="83.82" rot="MR0"/>
 <instance part="J1" gate="G$1" x="60.96" y="40.64"/>
-<instance part="R2" gate="G$1" x="218.44" y="25.4" rot="MR90"/>
-<instance part="A_O" gate="1" x="215.9" y="33.02" rot="R90"/>
-<instance part="A_I" gate="1" x="215.9" y="17.78" rot="R90"/>
+<instance part="R2" gate="G$1" x="218.44" y="20.32" rot="MR90"/>
 <instance part="A_G" gate="1" x="152.4" y="27.94"/>
-<instance part="SJ2" gate="1" x="251.46" y="0"/>
+<instance part="SJ2" gate="1" x="231.14" y="-10.16" rot="R90"/>
+<instance part="SJ3" gate="1" x="233.68" y="-10.16" rot="R90"/>
+<instance part="L_I" gate="1" x="256.54" y="5.08"/>
+<instance part="L_O" gate="1" x="261.62" y="5.08"/>
+<instance part="R_I" gate="1" x="243.84" y="5.08"/>
+<instance part="R_O" gate="1" x="248.92" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -9092,29 +9095,29 @@ want to go MONO</text>
 <wire x1="137.16" y1="22.86" x2="137.16" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="40.64" x2="137.16" y2="22.86" width="0.1524" layer="91"/>
 <junction x="137.16" y="22.86"/>
-<wire x1="203.2" y1="22.86" x2="200.66" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="22.86" x2="198.12" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="22.86" x2="195.58" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="22.86" x2="170.18" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="22.86" x2="193.04" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="22.86" x2="190.5" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="22.86" x2="170.18" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="22.86" x2="167.64" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="22.86" x2="165.1" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="22.86" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="22.86" x2="152.4" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="22.86" x2="144.78" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="22.86" x2="137.16" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="40.64" x2="152.4" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="40.64" x2="152.4" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="40.64" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="SDIO_BOT" gate="G$1" pin="VSS"/>
 <pinref part="SDIO_TOP" gate="G$1" pin="VSS"/>
 <junction x="152.4" y="40.64"/>
 <pinref part="SDIO_BOT" gate="G$1" pin="S4"/>
-<wire x1="203.2" y1="22.86" x2="203.2" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="22.86" x2="198.12" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="SDIO_BOT" gate="G$1" pin="S3"/>
-<wire x1="200.66" y1="27.94" x2="200.66" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="SDIO_BOT" gate="G$1" pin="S2"/>
-<wire x1="198.12" y1="27.94" x2="198.12" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="SDIO_BOT" gate="G$1" pin="S1"/>
 <wire x1="195.58" y1="27.94" x2="195.58" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="SDIO_BOT" gate="G$1" pin="S2"/>
+<wire x1="193.04" y1="27.94" x2="193.04" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="SDIO_BOT" gate="G$1" pin="S1"/>
+<wire x1="190.5" y1="27.94" x2="190.5" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="SDIO_TOP" gate="G$1" pin="S4"/>
 <wire x1="170.18" y1="27.94" x2="170.18" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="SDIO_TOP" gate="G$1" pin="S3"/>
@@ -9127,9 +9130,9 @@ want to go MONO</text>
 <junction x="165.1" y="22.86"/>
 <junction x="167.64" y="22.86"/>
 <junction x="170.18" y="22.86"/>
+<junction x="190.5" y="22.86"/>
+<junction x="193.04" y="22.86"/>
 <junction x="195.58" y="22.86"/>
-<junction x="198.12" y="22.86"/>
-<junction x="200.66" y="22.86"/>
 <pinref part="GND" gate="1" pin="MP"/>
 <wire x1="144.78" y1="25.4" x2="144.78" y2="22.86" width="0.1524" layer="91"/>
 <junction x="144.78" y="22.86"/>
@@ -9213,7 +9216,7 @@ want to go MONO</text>
 <segment>
 <wire x1="109.22" y1="22.86" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="22.86" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="50.8" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="50.8" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="SDIO_BOT" gate="G$1" pin="CD/DAT3(!CS!)"/>
 <pinref part="SDIO_TOP" gate="G$1" pin="CD/DAT3(!CS!)"/>
 <wire x1="152.4" y1="50.8" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
@@ -9227,7 +9230,7 @@ want to go MONO</text>
 <wire x1="124.46" y1="-5.08" x2="63.5" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-5.08" x2="63.5" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="20.32" x2="76.2" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="48.26" x2="152.4" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="48.26" x2="152.4" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="SDIO_BOT" gate="G$1" pin="CMD(DI)"/>
 <pinref part="SDIO_TOP" gate="G$1" pin="CMD(DI)"/>
 <wire x1="152.4" y1="48.26" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
@@ -9241,7 +9244,7 @@ want to go MONO</text>
 <wire x1="119.38" y1="-2.54" x2="66.04" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="-2.54" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="25.4" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="38.1" x2="152.4" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="38.1" x2="152.4" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="SDIO_BOT" gate="G$1" pin="DAT0(DO)"/>
 <pinref part="SDIO_TOP" gate="G$1" pin="DAT0(DO)"/>
 <wire x1="152.4" y1="38.1" x2="119.38" y2="38.1" width="0.1524" layer="91"/>
@@ -9261,7 +9264,7 @@ want to go MONO</text>
 <wire x1="71.12" y1="53.34" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="71.12" x2="119.38" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="71.12" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="45.72" x2="152.4" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="45.72" x2="152.4" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="45.72" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="SDIO_BOT" gate="G$1" pin="VDD"/>
 <pinref part="SDIO_TOP" gate="G$1" pin="VDD"/>
@@ -9273,7 +9276,7 @@ want to go MONO</text>
 <segment>
 <wire x1="109.22" y1="25.4" x2="134.62" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="25.4" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="SDIO_BOT" gate="G$1" pin="DAT1"/>
 <pinref part="SDIO_TOP" gate="G$1" pin="DAT1"/>
 <wire x1="152.4" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
@@ -9287,7 +9290,7 @@ want to go MONO</text>
 <wire x1="121.92" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="73.66" x2="68.58" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="22.86" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="53.34" x2="152.4" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="53.34" x2="152.4" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="SDIO_BOT" gate="G$1" pin="DAT2"/>
 <pinref part="SDIO_TOP" gate="G$1" pin="DAT2"/>
 <wire x1="152.4" y1="53.34" x2="121.92" y2="53.34" width="0.1524" layer="91"/>
@@ -9299,7 +9302,7 @@ want to go MONO</text>
 <segment>
 <wire x1="109.22" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="127" y1="20.32" x2="127" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="43.18" x2="152.4" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="43.18" x2="152.4" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="SDIO_BOT" gate="G$1" pin="CLK(SCLK)"/>
 <pinref part="SDIO_TOP" gate="G$1" pin="CLK(SCLK)"/>
 <wire x1="152.4" y1="43.18" x2="127" y2="43.18" width="0.1524" layer="91"/>
@@ -9322,7 +9325,7 @@ want to go MONO</text>
 <pinref part="SDIO_TOP" gate="G$1" pin="!CARD"/>
 <wire x1="132.08" y1="33.02" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="SDIO_BOT" gate="G$1" pin="!CARD"/>
-<wire x1="185.42" y1="33.02" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="33.02" x2="152.4" y2="33.02" width="0.1524" layer="91"/>
 <junction x="152.4" y="33.02"/>
 <wire x1="132.08" y1="35.56" x2="132.08" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="35.56" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
@@ -9395,27 +9398,13 @@ want to go MONO</text>
 <wire x1="142.24" y1="-45.72" x2="233.68" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="PAM1" gate="G$1" pin="INL"/>
 <junction x="166.37" y="-33.02"/>
-<wire x1="233.68" y1="-45.72" x2="233.68" y2="0" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="0" x2="233.68" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="2.54" x2="228.6" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="2.54" x2="228.6" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="SJ2" gate="1" pin="1"/>
-<wire x1="233.68" y1="0" x2="246.38" y2="0" width="0.1524" layer="91"/>
-<junction x="233.68" y="0"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<wire x1="109.22" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="55.88" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="60.96" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="HPR"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="30.48" x2="218.44" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="A_O" gate="1" pin="MP"/>
-<wire x1="218.44" y1="33.02" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
-<junction x="218.44" y="33.02"/>
+<wire x1="233.68" y1="-45.72" x2="233.68" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="SJ3" gate="1" pin="1"/>
+<wire x1="233.68" y1="-17.78" x2="233.68" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-17.78" x2="261.62" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="L_O" gate="1" pin="MP"/>
+<wire x1="261.62" y1="-17.78" x2="261.62" y2="2.54" width="0.1524" layer="91"/>
+<junction x="233.68" y="-17.78"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -9431,15 +9420,12 @@ want to go MONO</text>
 <segment>
 <pinref part="PAM1" gate="G$1" pin="INR"/>
 <wire x1="231.14" y1="-33.02" x2="200.66" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="5.08" x2="218.44" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="-2.54" x2="231.14" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="-2.54" x2="231.14" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="-2.54" x2="259.08" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="-2.54" x2="259.08" y2="0" width="0.1524" layer="91"/>
-<pinref part="SJ2" gate="1" pin="2"/>
-<wire x1="259.08" y1="0" x2="256.54" y2="0" width="0.1524" layer="91"/>
-<junction x="231.14" y="-2.54"/>
+<pinref part="SJ2" gate="1" pin="1"/>
+<wire x1="231.14" y1="-15.24" x2="231.14" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="-15.24" x2="248.92" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="R_O" gate="1" pin="MP"/>
+<wire x1="248.92" y1="-15.24" x2="248.92" y2="2.54" width="0.1524" layer="91"/>
+<junction x="231.14" y="-15.24"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -9456,9 +9442,7 @@ want to go MONO</text>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="218.44" y1="20.32" x2="218.44" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="A_I" gate="1" pin="MP"/>
-<wire x1="218.44" y1="20.32" x2="218.44" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="15.24" x2="218.44" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -9575,15 +9559,46 @@ want to go MONO</text>
 <junction x="160.02" y="-25.4"/>
 </segment>
 </net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="SJ2" gate="1" pin="2"/>
+<wire x1="231.14" y1="-2.54" x2="231.14" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="218.44" y1="5.08" x2="218.44" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="-2.54" x2="231.14" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="-2.54" x2="243.84" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="R_I" gate="1" pin="MP"/>
+<wire x1="243.84" y1="-2.54" x2="243.84" y2="2.54" width="0.1524" layer="91"/>
+<junction x="231.14" y="-2.54"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="228.6" y1="2.54" x2="228.6" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="2.54" x2="228.6" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-5.08" x2="233.68" y2="0" width="0.1524" layer="91"/>
+<pinref part="SJ3" gate="1" pin="2"/>
+<wire x1="233.68" y1="0" x2="233.68" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="0" x2="256.54" y2="0" width="0.1524" layer="91"/>
+<pinref part="L_I" gate="1" pin="MP"/>
+<wire x1="256.54" y1="0" x2="256.54" y2="2.54" width="0.1524" layer="91"/>
+<junction x="233.68" y="0"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<wire x1="109.22" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="55.88" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="60.96" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="HPR"/>
+<wire x1="218.44" y1="25.4" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
