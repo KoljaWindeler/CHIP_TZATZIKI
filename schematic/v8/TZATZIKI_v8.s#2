@@ -8988,6 +8988,7 @@ drill 1.1 mm</description>
 <part name="A_I" library="solpad" deviceset="SE11" device=""/>
 <part name="A_G" library="solpad" deviceset="SE11" device=""/>
 <part name="SJ2" library="jumper" deviceset="SJ" device=""/>
+<part name="SJ1" library="jumper" deviceset="SJ" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9037,11 +9038,12 @@ want to go MONO</text>
 <instance part="VBAT" gate="G$1" x="17.78" y="91.44" rot="R180"/>
 <instance part="GND11" gate="1" x="30.48" y="83.82" rot="MR0"/>
 <instance part="J1" gate="G$1" x="60.96" y="40.64"/>
-<instance part="R2" gate="G$1" x="218.44" y="25.4" rot="MR90"/>
-<instance part="A_O" gate="1" x="215.9" y="33.02" rot="R90"/>
-<instance part="A_I" gate="1" x="215.9" y="17.78" rot="R90"/>
+<instance part="R2" gate="G$1" x="218.44" y="20.32" rot="MR90"/>
+<instance part="A_O" gate="1" x="215.9" y="38.1" rot="R90"/>
+<instance part="A_I" gate="1" x="215.9" y="27.94" rot="R90"/>
 <instance part="A_G" gate="1" x="152.4" y="27.94"/>
 <instance part="SJ2" gate="1" x="251.46" y="0"/>
+<instance part="SJ1" gate="1" x="218.44" y="33.02" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -9411,11 +9413,10 @@ want to go MONO</text>
 <wire x1="132.08" y1="55.88" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="60.96" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="HPR"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="30.48" x2="218.44" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="A_O" gate="1" pin="MP"/>
-<wire x1="218.44" y1="33.02" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
-<junction x="218.44" y="33.02"/>
+<wire x1="218.44" y1="38.1" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
+<junction x="218.44" y="38.1"/>
+<pinref part="SJ1" gate="1" pin="2"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -9456,9 +9457,7 @@ want to go MONO</text>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="218.44" y1="20.32" x2="218.44" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="A_I" gate="1" pin="MP"/>
-<wire x1="218.44" y1="20.32" x2="218.44" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="15.24" x2="218.44" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -9573,6 +9572,15 @@ want to go MONO</text>
 <pinref part="J1" gate="G$1" pin="VCC-5V@2"/>
 <wire x1="160.02" y1="-27.94" x2="160.02" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="160.02" y="-25.4"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="A_I" gate="1" pin="MP"/>
+<junction x="218.44" y="27.94"/>
+<pinref part="SJ1" gate="1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="218.44" y1="25.4" x2="218.44" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
